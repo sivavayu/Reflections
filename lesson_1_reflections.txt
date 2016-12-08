@@ -1,0 +1,35 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Using FC command from the CMD, I could see the differences generated. Manually sifting through the differences, I could find a typo.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Having access to the entire history of a file will help me in going back to a last version that worked, if I mess up the current version or am not satisfied with the current version.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    
+	Pro: Autosave would create many versions and clutter my revision history which will make it difficult to browse through the changes. 
+	Con: Manually choosing is user dependent and users sometimes forget to commit and this results in lots of frustration when the code doesn't work as intended. This manual error is the cost to the convenience that manual commit provides the user with. User with enough practice will know and not forget to commit from time to time when logical changes are made.  
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Google Docs are generally used for documents and writing purposes, not so much for coding. So, those files need not be treated together generally. On the other hand, coding involves changes on multiple files many times. So, it is better to have an option to save multiple files in one commit to capture a logical change for the application being built rather than a change of text in a file. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+   First, you clone the repository from the website using "git clone <weblink>" command. Then "git log" can be used to find the list of commits so far. To scroll down, press down arrow. "git diff <first_id (old)> <second_id(new)>" can be used to find the changes in a commit compared to the prior commit. <second_id> is the file you want to find changes in compared to <first_id>. The order of commits shown in the git log is opposite chronological %meaning latest will show up first
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Using version control will keep a record of all the changes I made. If I am working on a code, and realize that there are so many bugs in the current version, it is easier to figure out the error by going back to the one of the previous versions instead of wasting hours of time finding to bug manually in the current version.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I will trying using Git for any new codes I write. It will be a fun experience. The way I set up Git is different from what was shown in the videos as it seems there is a change in the latest version of Git. MingW64 shows up in the name of the command window rather than "bash" and also Quick Edit mode is not available anymore through git bash. I had to change the $Home to my google drive directory for the course by adding a couple of lines in the .bash_profile
