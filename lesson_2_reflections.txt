@@ -10,13 +10,23 @@ A staging area contains the changes(file names of the updated files) that are re
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+If I am not sure how big of a change I made or if I lose the track of the changes I made, I can view all the changes I made by using "git diff" without any arguments. This will show me the difference between the staging area and the working directory. Since the staging area has the same files as the repository till I add the changes to staging area, it is a good practice to use git diff to find all the changes. If I feel all the changes cumulatively make one logical change, then I decide to commit. 
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+I believe branches would be really helpful if we need to do any iteration exercises for some features. If you are in a master branch and trying out a new feature and after multiple commits to create that new feature, you want to scrap new feature, then you can revert all the commits but the history is still full of the changes you made so far. You may  not need them at all as you will never think about that feature again or you may not want them in this branch. So, if you create a new branch and branch out your commits in a new direction to try out the feature, you can either decide to continue on in that branch or merge with other branch or even come back to the master branch if you decide to scrap the idea. You can also use branches to create multiple "concept models or features" to present to a team. Example an app with three different types of UI. The core functionality will be same except for the UI. So you will want to create three different branches to keep things sane and easy to present at once. 
+
 How do the diagrams help you visualize the branch structure?
+
+The diagrams give an organized view of all the commits irrespective of the number of branches. It is like visualizing a tree. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+Merging two branches will result in addition of features of both the branches. Instead of manually checking the lines of code added, it is easier to automate the process to reduce the scope of human error and save a lot of time. We represent the diagram in a tree like structure, because it is very intuitive as the parents can be visualized as the branch links in backward direction and all the open ended branches are new branches. 
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Git's automatic merging is helpful most of the times as it will save a lot of time. But conflicts may arise if both the users changed same lines of code as happened with sara and caroline. Sara changed the code so that a block of code represents a function. While caroline did not do that. So git does not know which code to keep in the final merge. So it flags a conflict and asks the user to take care of it. Then a user identifies the mistake and merges manually, which is a neat way to resolve conflicts. 
