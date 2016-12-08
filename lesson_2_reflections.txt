@@ -1,0 +1,22 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When I initialize a repository, git starts creating metadata for any commits I make in the future. However, no commits are made initially by git. Even the initial git needs to be made manually and a message needs to be added to the initial commit manually as well. I need to create a repository to record the revisions using git. Else, no versions are made in that folder as git does not recognize it as a repository.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+A staging area contains the changes(file names of the updated files) that are ready to be committed. Repository will contain all the commits and the metadeta so far. Working directory contains the repository and any files related to the project that aren't being tracked (meaning they haven't been committed at all)
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
