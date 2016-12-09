@@ -33,3 +33,11 @@ When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
     Fill in your answer here
+	
+Other userful commands: 
+	To change the editor for commit messages from vim to notepad++, I used this command from stack overflow: http://stackoverflow.com/questions/1634161/how-do-i-use-notepad-or-other-with-msysgit
+	Command:
+			git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+	
+	
+
