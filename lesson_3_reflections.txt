@@ -22,7 +22,7 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    A copy of last known remote, if stored locally, will help Git in understanding the difference between the state the local system knows and the current state on the GitHub when you fetch the repository.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
