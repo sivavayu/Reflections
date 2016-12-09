@@ -32,7 +32,7 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    While collaborating, different people will have different ideas for features. These ideas must be approved by everyone or someone on the team to be put on the master. So, it is easier to have a branch that can be removed or added than a segment of master that will not be needed in the future at all. This keeps master smaller than if there were no branches. 
 	
 Other userful commands: 
 	To change the editor for commit messages from vim to notepad++, I used this command from stack overflow: http://stackoverflow.com/questions/1634161/how-do-i-use-notepad-or-other-with-msysgit
